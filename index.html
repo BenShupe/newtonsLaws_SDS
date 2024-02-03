@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newtons laws</title>
+</head>
+<body>
+
+    <script>
+        document.addEventListener('keydown', function(e){
+            if(e.key == 'Enter'){
+                window.location.href = './sim1/sim1.html';
+            }
+        });
+    </script>
+
+    <h1>Controls</h1>
+    <div class="sim1">
+        <ul>
+            <li>Enter - Switch Between Simulations</li>
+            <h2>Simulation 1 controls</h2>
+            <li>1 - Force mode</li>
+            <li>Click - Apply Force (In Force Mode) </li>
+            <li>2 - Edit Mass and Radius</li>
+            <li>3 - Place Objstruction Start Point</li>
+            <li>4 - Place Objstruction End Point</li>
+            <li>r - Restart Simulation</li>
+        </ul>
+    </div>
+    <div class="sim2">
+        <ul>
+            <h2>Simulation 2 controls</h2>
+            <li>Space - Toggle Mass/Radius Changing Mode</li>
+            <li>Click - Move Balls Toward Eachother With Equal Speed</li>
+            <li>r - Restart Simulation</li>
+        </ul>
+    </div>
+
+    <style>
+        *{
+            padding:0;
+            margin: 0;
+            overflow: hidden;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #fff;
+        }
+        body{
+            background-color: #000;
+        }
+        h1, h2{
+            text-align: center;
+            margin-top: 20px;
+        }
+        ul{
+            list-style: none;
+            margin-top: 20px;
+            text-align: center;
+        }
+        li{
+            margin-top: 10px;
+        }
+    </style>
+</body>
+</html>
